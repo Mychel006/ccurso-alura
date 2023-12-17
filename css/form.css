@@ -1,0 +1,62 @@
+:root {
+    --main-bg-color: #333B1E;
+    --main-text-color: #FFFFFF;
+    --primary-color: #EBC181;
+    --secondary-color: #9B8357;
+    --delete-color: crimson;
+    --table-border-color: #EBC181;
+    --table-header-bg: #EBC181;
+    --table-header-text: #333B1E;
+    --table-row-border: #ddd;
+    --table-row-text: #FFF;
+    --button-hover-filter: saturate(150%);
+  }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  
+  .container-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-radio {
+    display: flex;
+  }
+  
+  .container-radio div {
+    padding: 10px;
+  }
+  
+  form label {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    border-radius: 10px;
+    border: 3px solid var(--input-border-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+  }
+  
+  form input[type='file'] {
+    color: var(--main-text-color);
+  }
+  
+  form input::file-selector-button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form input:focus {
+    border: 3px solid var(--input-focus-border-color);
+    outline: none;
+  }
